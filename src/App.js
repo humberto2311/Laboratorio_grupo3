@@ -11,7 +11,7 @@ function App() {
       <Container>
         <Navbar.Brand href="#home">
           <img
-            src="path/to/logo.png" // Reemplaza con la ruta de tu logo
+            src="path/to/logo.png"
             width="30"
             height="30"
             className="d-inline-block align-top"
@@ -20,12 +20,13 @@ function App() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto">
+          <Nav className="mx-auto nav-center">
             <Nav.Link href="#home">WOW</Nav.Link>
             <Nav.Link href="#men">Men</Nav.Link>
             <Nav.Link href="#kids">Kids</Nav.Link>
             <Nav.Link href="#sale">Sale</Nav.Link>
           </Nav>
+
           <Nav className="ms-auto nav-buttons">
             <Nav.Link href="#search">
               <FaSearch />
@@ -41,8 +42,6 @@ function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-
   );
 }
 

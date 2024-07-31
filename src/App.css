@@ -36,7 +36,13 @@
     transform: rotate(360deg);
   }
 }
-/* Asegúrate de que .nav-buttons esté centrado en pantallas pequeñas */
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   .navbar-collapse {
     justify-content: center;
@@ -57,14 +63,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 10px; /* Ajusta el margen si es necesario */
+    margin-top: 10px;
   }
 
   .nav-buttons .nav-link, 
   .nav-buttons .dropdown {
-    margin: 0 5px; /* Espaciado entre los botones */
+    margin: 0 5px;
     display: flex;
     justify-content: center;
   }
 }
-

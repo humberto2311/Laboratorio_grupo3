@@ -1,32 +1,62 @@
-import React from 'react';
-import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
-import { FaFacebookF, FaGithub, FaTelegramPlane, FaFigma } from 'react-icons/fa';
-import './Footer.css'; 
+import React from "react";
+import { Container, Row, Col, Button, Nav } from "react-bootstrap";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaTelegramPlane,
+  FaFigma,
+} from "react-icons/fa";
+import "./Footer.css";
 
-function Footer (){
+function Footer() {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
-        
-          <Col md={4} className="d-flex justify-content-center mb-3">
-            <Button className="social-button" href="https://facebook.com" target="_blank"><FaFacebookF /></Button>
-            <Button className="social-button" href="https://github.com" target="_blank"><FaGithub /></Button>
-            <Button className="social-button" href="https://t.me" target="_blank"><FaTelegramPlane /></Button>
-            <Button className="social-button" href="https://figma.com" target="_blank"><FaFigma /></Button>
-          </Col>
-
-         
-          <Col md={4} className="text-center mb-3">
+        <Row className="align-items-center footer-content">
+          <Col
+            md={6}
+            className="d-flex flex-column align-items-center text-center text-md-left mb-3"
+          >
+            <div className="d-flex justify-content-center mb-2">
+              <Button
+                className="social-button"
+                href="https://facebook.com"
+                target="_blank"
+              >
+                <FaFacebookF />
+              </Button>
+              <Button
+                className="social-button"
+                href="https://github.com"
+                target="_blank"
+              >
+                <FaGithub />
+              </Button>
+              <Button
+                className="social-button"
+                href="https://t.me"
+                target="_blank"
+              >
+                <FaTelegramPlane />
+              </Button>
+              <Button
+                className="social-button"
+                href="https://figma.com"
+                target="_blank"
+              >
+                <FaFigma />
+              </Button>
+            </div>
             <p>Texto genérico aquí</p>
+            <Button className="get-started-button mb-2">Get Started</Button>
           </Col>
 
-         
-          <Col md={4} className="d-flex flex-column align-items-center mb-3">
-            <Button className="get-started-button mb-2">Get Started</Button>
-            <div className="d-flex">
-              {/* Menú */}
-              <Nav className="footer-menu me-3">
+          <Col
+            md={6}
+            className="d-flex flex-column align-items-center text-center text-md-left mb-3"
+          >
+            <div className="d-flex justify-content-between w-100">
+              <Nav className="footer-menu">
                 <Nav.Link href="#">Menu</Nav.Link>
                 <Nav.Link href="#">About</Nav.Link>
                 <Nav.Link href="#">Features</Nav.Link>
@@ -34,8 +64,6 @@ function Footer (){
                 <Nav.Link href="#">Gallery</Nav.Link>
                 <Nav.Link href="#">Team</Nav.Link>
               </Nav>
-
-         
               <Nav className="footer-follow-us">
                 <Nav.Link href="#">Follow us</Nav.Link>
                 <Nav.Link href="#">Facebook</Nav.Link>
@@ -49,7 +77,6 @@ function Footer (){
           </Col>
         </Row>
 
-      
         <Row className="text-center">
           <Col md={12}>
             <div className="legal-links">
@@ -66,6 +93,6 @@ function Footer (){
       </Container>
     </footer>
   );
-};
+}
 
 export default Footer;
